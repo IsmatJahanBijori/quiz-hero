@@ -51,16 +51,16 @@
                 4. How does "quizTimer()" function work?
             </div>
             <div class="collapse-content">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem expedita obcaecati dolor quo tenetur non ipsum ipsam corporis quia, eum molestiae culpa nihil a reiciendis? Officia assumenda voluptatum quam fugiat numquam dolorem perferendis sequi deserunt asperiores nulla? Ea, adipisci modi.</p>
+                <p>In quizTimer() function: it actually handles timer. First set the interval by using setInterval() function. Get the time using "count" id. Then using math.floor() function to rounds down and returns the largest time less than or equal to a given time. Set the inner html in countHtml variable. If count is greater than 60 sec, and again if time is even then add red bold color otherwise red semi bold color. If the dismiss parameter is true then clear the time using clearInterval function.</p>
             </div>
             </div>
             <div tabindex="0"
             class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
             <div class="collapse-title text-xl font-medium">
-                5. How does "changeQuiz()" function work?
+                5. How does "chooseQuiz()" function work?
             </div>
             <div class="collapse-content">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem expedita obcaecati dolor quo tenetur non ipsum ipsam corporis quia, eum molestiae culpa nihil a reiciendis? Officia assumenda voluptatum quam fugiat numquam dolorem perferendis sequi deserunt asperiores nulla? Ea, adipisci modi.</p>
+                <p>In chooseQuiz() function: it has two parameters, index and givenAns. It handles to select or choose the quiz answer. "answers" is a blank array. find the ans.id to match with index number in data file. If isExist variable is true then enter the "if" condition, increase the serial number. answers.splice() the ans using spread operator, then show givenAns otherwise push ans in the answers array.</p>
             </div>
             </div>
         </div>
